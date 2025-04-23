@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">  {{!-- cambiamos el idioma --}}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+  {{!-- Tus favicons personalizados dentro de custom/images/ --}}
+  <link rel="icon" href="/images/favicon.png" />
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
+
+  {{!-- Meta tags OpenGraph/Twitter adaptadas --}}
+  <meta property="og:url" content="https://{{default_domain}}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Adriana Gallardo ShortCuts" />
+  <meta property="og:description" content="Acorta y comparte enlaces para tus proyectos con estadísticas integradas." />
+  <meta property="og:image" content="https://{{default_domain}}/images/og-image.png" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Adriana Gallardo ShortCuts" />
+  <meta name="twitter:description" content="Acorta y comparte enlaces para tus proyectos con estadísticas integradas." />
+  <meta name="twitter:image" content="https://{{default_domain}}/images/og-image.png" />
+
+  {{!-- DESCRIPCIÓN META --}}
+  <meta name="description" content="Adriana Gallardo ShortCuts – Acorta y gestiona tus URLs con estadísticas fáciles." />
+
+  {{!-- TÍTULO de la pestaña: usa solo SITE_NAME --}}
+  <title>Empodera Link</title>
+
+  {{!-- CSS base de Kutt --}}
+  <link rel="stylesheet" href="/css/styles.css">
+  {{#each custom_styles}}
+    <link rel="stylesheet" href="/css/{{this}}">
+  {{/each}}
+  {{{block "stylesheets"}}}
+</head>
+<body>
+  <div class="main-wrapper">
+    {{{body}}}
+  </div>
+
+  {{{block "scripts"}}}
+  <script src="/libs/htmx.min.js"></script>
+  <script src="/libs/qrcode.min.js"></script>
+  <script src="/scripts/main.js"></script>
+</body>
+</html>

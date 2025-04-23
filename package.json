@@ -25,7 +25,7 @@
   "homepage": "https://github.com/thedevs-network/kutt#readme",
   "dependencies": {
     "bcryptjs": "2.4.3",
-    "better-sqlite3": "11.8.1",
+    "better-sqlite3": "^11.8.1",
     "bull": "4.16.5",
     "cookie-parser": "1.4.7",
     "cors": "2.8.5",

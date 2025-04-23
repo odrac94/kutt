@@ -1,0 +1,9 @@
+.logo-wrapper .logo {
+  display: flex;
+  align-items: center;
+}
+.logo-wrapper .logo img {
+  height: 40px;
+  width: auto;
+  margin-right: 8px;
+}
